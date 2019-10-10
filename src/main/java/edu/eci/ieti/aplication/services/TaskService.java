@@ -55,6 +55,12 @@ public class TaskService implements ITaskService {
 		return taskRepository.updateTask(task);
 	}
 
+	@Override
+	public Task createTask(Task task) {
+		// TODO Auto-generated method stub
+		return taskRepository.saveTask(task);
+	}
+
 
 
 }
